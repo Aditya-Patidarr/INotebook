@@ -1,6 +1,6 @@
 const mongoose = require('mongoose'); 
  // 'mongodb://127.0.0.1:27017/iNotebook'
-const connectToMongo = async (dburl)=>{
+const connectToMongo = async(dburl)=>{
     await mongoose.connect(dburl)   
     .then(()=>{
         console.log("INotebook database is active!!!")
